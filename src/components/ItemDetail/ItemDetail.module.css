@@ -1,0 +1,107 @@
+/* Página: centra todo y da aire */
+.detailPage {
+  width: 100%;
+  padding: 16px 12px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card del detalle */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(900px, 94vw);
+  background: rgb(202, 202, 202);
+  border: 1px solid #000;
+  border-radius: 2px;
+  box-shadow: 5px 3px 8px 4px rgb(204, 204, 204);
+  padding: 18px 14px;
+  margin-bottom: 1rem;
+}
+
+/* Título */
+.h1 {
+  margin: 0 0 14px;
+  text-align: center;
+  color: #000;
+  font-size: clamp(22px, 2.5vw, 34px);
+  line-height: 1.15;
+}
+
+/* Caja de imagen (CLAVE) */
+.imageBox {
+  width: 60%;
+  margin: 0 auto 16px;
+
+  /* Control de tamaño en desktop */
+  max-width: 640px;
+
+  /* Alto controlado, sin volverse gigante */
+  height: 360px;
+
+  background: #fff;
+  /* border: 1px solid #000; */
+  border-radius: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+/* Imagen: se adapta al box sin deformarse */
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Precio */
+.priceRow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.h3 {
+    margin: 1rem;
+    color: #000;
+}
+
+/* Texto */
+.h4 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: #000;
+    font-size: clamp(15px, 2.2vw, 20px);    
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* .stock {
+  margin: 0;
+  color: #000;
+  font-size: 14px;
+} */
+
+/* ✅ MOBILE: acá está el ajuste real */
+@media (max-width: 520px) {
+  .detailCard {
+    padding: 14px 12px;
+  }
+
+  .imageBox {
+    max-width: 100%;
+    max-height: 180px; 
+    border-radius: 6px;
+  }
+}
+
+.swipe {
+  margin-top: 0.5rem;
+  font-size: clamp(10px, 2vw, 14px);  
+  text-align: center;
+}

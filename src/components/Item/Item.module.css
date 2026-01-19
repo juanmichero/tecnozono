@@ -1,0 +1,80 @@
+.card {
+  border: 1px solid #000;
+  border-radius: 2px;
+  background-color: rgb(202, 202, 202);
+  box-shadow: 3px 3px 10px 3px rgb(204, 204, 204);
+
+  /* tamaño parejo + responsive */
+  flex: 0 1 clamp(150px, 28vw, 320px);
+  padding: 14px 12px;
+  margin: 10px;
+
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* CLAVE: sin altura fija -> no aparece “hueco” */
+  height: auto;
+}
+
+/* Título: 2 líneas máximo, sin romper */
+.name {
+  margin: 0 0 10px;
+  text-align: center;
+  color: #000;
+
+  font-size: clamp(12px, 2vw, 24px);
+  line-height: 1.15;
+
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Link de imagen */
+.imageLink {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+}
+
+/* Zona de imagen con tamaño consistente */
+.imageWrap {
+  width: 100%;
+  background: #fff;
+  /* border: 1px solid #000; */
+  border-radius: 2px;
+
+  /* define el alto de la imagen sin depender de la card */
+  aspect-ratio: 4 / 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 12px;
+}
+
+/* Imagen que se adapta sin deformarse */
+.img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Precio abajo, sin espacios raros */
+.div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.price {
+  margin: 0;
+  font-style: italic;
+  color: #000;
+  font-size: clamp(16px, 2vw, 24px);
+}

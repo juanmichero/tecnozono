@@ -1,0 +1,16 @@
+Options -MultiViews
+RewriteEngine On
+
+# No reescribir archivos estáticos (assets, imágenes, etc.)
+RewriteRule ^assets/ - [L]
+RewriteRule ^img/ - [L]
+RewriteRule ^favicon\.ico$ - [L]
+RewriteRule ^favicon\.png$ - [L]
+
+# Si existe el archivo o carpeta, servilo normal
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# SPA fallback
+RewriteRule ^ index.html [L]
