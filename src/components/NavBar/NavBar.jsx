@@ -15,6 +15,9 @@ const NavBar = ({img}) => {
         <Link to="/" className={classes.button}>
           Productos
         </Link>
+        <Link to="/service" className={classes.button}>
+          Servicio Técnico
+        </Link>
         <Link to="/contact" className={classes.button}>
           Contacto
         </Link>

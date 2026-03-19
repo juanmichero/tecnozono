@@ -1,0 +1,27 @@
+.waButton {
+  position: fixed;
+  right: clamp(12px, 2vw, 18px);
+  bottom: clamp(12px, 2vw, 18px);
+  width: clamp(44px, 6vw, 64px);
+  height: clamp(44px, 6vw, 64px);
+
+  border-radius: 999px;
+  background: #25D366;
+  border: 1px solid #0b5a2a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  z-index: 9999;
+}
+
+.waIcon {
+  width: 70%;
+  height: 70%;
+  fill: #fff;
+  display: block;
+
+  transform: translateX(1px) translateY(-1px);
+}
