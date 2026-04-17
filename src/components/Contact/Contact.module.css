@@ -1,6 +1,6 @@
 .h1 {
     font-size: clamp(30px, 5vw, 48px);
-    color: #000;
+    /* color: #000; */
 }
 
 .h3 {
@@ -27,11 +27,6 @@
 .link:hover {
     text-decoration: underline;
 }
-
-/* .img {
-    width: min(20rem, 1000vw, 10rem);
-    /* margin-top: -1.5rem; */
-
 
 .mapWrap {
   /* width: min(900px, 94vw); */

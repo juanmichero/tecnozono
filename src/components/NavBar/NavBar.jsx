@@ -15,10 +15,10 @@ const NavBar = ({img}) => {
         <Link to="/" className={classes.button}>
           Productos
         </Link>
-        <Link to="/service" className={classes.button}>
-          Servicio Técnico
+        <Link to="/instalaciones" className={classes.button}>
+          Instalaciones
         </Link>
-        <Link to="/contact" className={classes.button}>
+        <Link to="/contacto" className={classes.button}>
           Contacto
         </Link>
       </section>

@@ -6,7 +6,7 @@ import classes from './App.module.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton'
-import Service from './components/Service/Service'
+import Instalaciones from './components/Instalaciones/Instalaciones'
 
 function App() {
 
@@ -21,7 +21,7 @@ function App() {
             <Route path='/category/:category' element={<ItemListContainer greeting="" />} />
             <Route path='/product/:id' element={<ItemDetailContainer />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/service" element={<Service />} />
+            <Route path="/instalaciones" element={<Instalaciones />} />
             <Route path='*' element={<h1 className={classes.error}>ERROR 404</h1>}/>
           </Routes>
           <WhatsAppButton />

@@ -6,7 +6,6 @@ const Contacto = () => {
     <h1 className={classes.h1}>
         Contacto
     </h1>
-    {/* <img className={classes.img} src={"/img/logo_4.png"} /> */}
       <h3 className={classes.h3}>
         Si querés comunicarte con nosotros, podés hacerlo a través de:
       </h3>
